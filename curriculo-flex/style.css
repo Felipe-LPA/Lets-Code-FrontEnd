@@ -71,6 +71,8 @@ table tr {
 }
 .grade {
   text-align: end;
+  display: flex;
+  align-items: center;
 }
 .data {
   font-style: italic;
@@ -79,4 +81,16 @@ table tr {
 }
 .cargo {
   margin-bottom: 15px;
+}
+.grade-icons{
+  width: 10px;
+  height: 10px;
+  background-color: #aaa;
+  margin-left: 5px;
+}
+.grade-icons-fulfill{
+  background-color: #0286bb;
+  width: 10px;
+  height: 10px;
+  margin-left: 5px;
 }
