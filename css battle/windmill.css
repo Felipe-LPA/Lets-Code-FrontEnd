@@ -1,0 +1,54 @@
+.innercontainer {
+    background-color: #191919;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+.wrapper{
+    height: 200px;
+    width: 200px;
+    /* background-color: red; */
+    display: flex;
+    flex-wrap: wrap;
+}
+.innerContent{
+    height: 100px;
+    width: 100px;
+    /* background-color:purple; */
+    position: relative;
+    overflow: hidden;
+}
+.circle{
+    border-radius:50%;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    overflow: hidden;
+}
+.yellow{
+    background-color: #f9e492;
+}
+.blue{
+    background-color: #4f77ff;
+    top: 0;
+}
+.bottom{
+    bottom: -50px;
+}
+.left{
+    left: -50px;
+}
+.top{
+    top: -50px;
+}
+.right{
+    right: -50px;
+}
+  
+  /* HTML */
+  
+  /* 
+
+  */

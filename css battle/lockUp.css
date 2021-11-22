@@ -1,0 +1,34 @@
+.innercontainer {
+    background-color: #E38F66;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content:center;
+    align-items:center;
+}
+.outCircle{
+    height: 200px;
+    width: 200px;
+    background-color: #aa445f;
+    border-radius: 50%;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+.innerCircle{
+    height: 85px;
+    width: 85px;
+    background-color: #aa445f;
+    border-radius: 50%;
+    border-left: 30px solid #aa445f;
+    border-right: 30px solid #aa445f;
+    border-top: 30px solid #f7ec7d;
+    border-bottom: 30px solid #f7ec7d;
+    transform:rotate(45deg)
+}
+
+/* HTML */
+
+/* <div class="outCircle">
+          <div class="innerCircle"></div>
+        </div> */

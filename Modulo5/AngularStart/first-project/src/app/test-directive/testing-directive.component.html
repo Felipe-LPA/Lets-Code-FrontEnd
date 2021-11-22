@@ -1,0 +1,52 @@
+<ul>
+  <li *ngFor="let item of list">
+    {{ item }}
+  </li>
+</ul>
+
+<nav class="navbar navbar-expand-sm navbar-light bg-light">
+  <div class="container-fluid">
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a
+          class="nav-link"
+          [class.active]="tab === 'home'"
+          (click)="changetab('home')"
+          (click)="show()"
+          >Home</a
+        >
+        <a
+          class="nav-link"
+          [class.active]="tab === 'about'"
+          (click)="changetab('about')"
+          (click)="show()"
+          >About</a
+        >
+        <a
+          class="nav-link"
+          [class.active]="tab === 'contact'"
+          (click)="changetab('contact')"
+          (click)="show()"
+          >Contact</a
+        >
+      </div>
+    </div>
+  </div>
+</nav>
+<section [ngSwitch]="tab">
+  <article *ngSwitchDefault ><ng-content select=".home"></ng-content>
+  </article>
+  <article appFundoRoxo *ngSwitchCase="'about'"><ng-content select=".about"></ng-content></article>
+  <article *ngSwitchCase="'contact'"><ng-content select=".contact"></ng-content></article>
+</section>

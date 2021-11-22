@@ -4,8 +4,8 @@
   box-sizing: border-box;
 }
 
-body{
-  font-family: 'Open Sans', sans-serif;
+body {
+  font-family: "Open Sans", sans-serif;
   font-size: 14px;
 }
 h1,
@@ -14,22 +14,22 @@ h2 {
 }
 header h1 {
   border: 3px solid #696969;
-  
+
   padding: 30px;
 }
-header span{
-    position: relative;
-    top: -10px;
-    background-color: #fff;
-    display: inline-block;
-    padding: 0 8px;
-    text-transform: uppercase;
+header span {
+  position: relative;
+  top: -10px;
+  background-color: #fff;
+  display: inline-block;
+  padding: 0 8px;
+  text-transform: uppercase;
 }
-header{
-    text-align: center;
+header {
+  text-align: center;
 }
-ul{
-    list-style-position:inside
+ul {
+  list-style-position: inside;
 }
 #container {
   width: 90vw;
@@ -41,32 +41,31 @@ ul{
   gap: 5%;
 }
 
-#main h2{
-    border-bottom: 3px solid #696969;
-    margin-bottom: 10px;
-    margin-top: 20px;
-    font-style: italic;
+#main h2 {
+  border-bottom: 3px solid #696969;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  font-style: italic;
 }
-#main #right ul{
-    list-style-type: none;
+#main #right ul {
+  list-style-type: none;
 }
 
-table{
-    width: 100%;
+table {
+  width: 100%;
 }
-table tr{
-    display: flex;
-    justify-content: space-between;
+table tr {
+  display: flex;
+  justify-content: space-between;
 }
-.grade{
-    text-align: end;
+.grade {
+  text-align: end;
 }
-.data{
+.data {
   font-style: italic;
   font-size: 0.8em;
   font-weight: 100;
 }
-.cargo{
+.cargo {
   margin-bottom: 15px;
 }
-

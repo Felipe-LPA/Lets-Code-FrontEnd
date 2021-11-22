@@ -1,0 +1,16 @@
+<!-- <input type="text" [formControl]="name1">
+<button type="button" (click)="showUsProperties()"></button> -->
+<form [formGroup]='father' (ngSubmit)='showFormValue() '>
+  <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>Nome</mat-label>
+    <input matInput type="text" formControlName="name">
+  </mat-form-field>
+  <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>Sobrenome</mat-label>
+  <input matInput type="text" formControlName="lastName">
+</mat-form-field>
+  <button mat-raised-button [disabled]='father.invalid' color="primary">Click me</button>
+  <button mat-fab aria-label="Example icon-button with a heart icon">
+    <mat-icon>view_day</mat-icon>
+  </button>
+</form>

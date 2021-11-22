@@ -1,0 +1,7 @@
+<section class='container'>
+  <form [formGroup]='father' (ngSubmit)='something()'>
+    <input type="email" formControlName="email">
+    <input type="password" formControlName="password">
+    <button [disabled]='father.invalid'>Entrar</button>
+  </form>
+</section>

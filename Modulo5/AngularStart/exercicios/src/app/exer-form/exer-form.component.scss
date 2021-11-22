@@ -1,0 +1,35 @@
+section{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  background-color: #ccc;
+}
+form{
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+  gap: 5px;
+  width: 50vw;
+
+}
+
+input{
+  border: none;
+  outline: none;
+}
+input.ng-touched.ng-invalid{
+  border-bottom: 1px solid red;
+}
+
+button{
+background-color: #505EDB;
+}
+button:hover{
+  background-color: #9CA6FF;
+  color: #2C0088;
+}
+button:disabled{
+  background-color: #C5C7D3;
+}

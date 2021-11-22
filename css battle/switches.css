@@ -1,0 +1,55 @@
+.innercontainer {
+  background-color: #62396d;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.innerContent {
+  height: 210px;
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  position: relative;
+}
+.circle {
+  border-radius: 50%;
+  background-color: #f7ec7d;
+  height: 100px;
+  width: 100%;
+}
+.left {
+    width: 100px;
+    height: 150px;
+    background-color:  #aa445f;
+    border-radius: 50px;
+    display: flex;
+    align-items:flex-end;
+    position: absolute;
+    top: 0;
+}
+.right {
+    width: 100px;
+    height: 150px;
+    background-color:  #e38f66;
+    border-radius: 50px;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    right:0;
+}
+
+/* HTML */
+
+/* 
+<div class="innerContent">
+        <div class="left">
+                <div class="circle"></div>
+            </div>
+            <div class="right">
+                <div class="circle"></div>
+            </div>     
+        </div>
+*/

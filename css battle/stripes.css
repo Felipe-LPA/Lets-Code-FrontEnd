@@ -1,0 +1,56 @@
+.innercontainer {
+  background-color: #1a4341;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.wrapper {
+  background-color: #f3ac3c;
+  height: 180px;
+  width: 200px;
+  position: relative;
+}
+.straps {
+  width: 100%;
+  background-color: #1a4341;
+  height: 20px;
+  position:absolute;
+}
+.first {
+  top: 20px;
+}
+.second {
+  top: 60px;
+}
+.third {
+    top: 100px;
+}
+.forth {
+    top: 140px;
+}
+.circle{
+    height: 250px;
+    width: 155px;
+    border-radius: 50%;
+    background-color: #1a4341;
+    /* background-color: purple; */
+    position: absolute;
+}
+.right{
+    left: 0%;
+}
+.left{
+    right: 0%;
+}
+
+/* <div class="wrapper">
+            <div class="straps first"></div>
+            <div class="straps second"></div>
+            <div class="straps third"></div>
+            <div class="straps forth"></div>
+        </div>
+        <div class="circle right"></div>
+        <div class="circle left"></div> */

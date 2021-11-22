@@ -1,0 +1,18 @@
+<select #field (change)="0">
+  <option value="Nome">Nome</option>
+  <option value="Idade">Idade</option>
+  <option value="Telefone">Telefone</option>
+</select>
+
+<div class="input-group mb-3">
+  <span class="input-group-text" id="basic-addon1">{{field.value}}</span>
+  <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+</div>
+<p>Mostrar elemento abaixo</p>
+<input type="radio" name="choice" (change)="getChoice(true)"  id="yes">
+<label for="yes">Sim</label>
+<br>
+<input type="radio" name="choice" (change)="getChoice(false)" id="no">
+<label for="no">Não</label>
+<br><br>
+<p [style.display]="showElement ? 'block' : 'none' ">{{field.value}}</p>

@@ -1,0 +1,10 @@
+<input type="checkbox" (change)="showUsTheHobbies()"  id="hobbies">
+<label for="hobbies">Deseja informar alguns hobbies?</label>
+<input
+type="text"
+*ngIf="showingHobbies"
+placeholder="Digite seus hobbies"
+#hobbies
+(keyup.enter)="createHobbies(hobbies)"
+>
+

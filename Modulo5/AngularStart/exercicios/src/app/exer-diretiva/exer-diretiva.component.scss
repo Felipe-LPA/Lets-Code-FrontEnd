@@ -1,0 +1,54 @@
+.container{
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  margin-top:30%;
+  // padding: 10vw;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  width: 80%;
+}
+input[type="text"]{
+  border-width: 0 0 1px 0;
+  padding: 5px 0;
+  width: 100%;
+  outline: none;
+}
+input[type="text"]::placeholder{
+  color: #ccc;
+}
+input.ng-touched.ng-invalid{
+  border-bottom: 1px solid red;
+}
+
+button{
+background-color: #505EDB;
+width:40%;
+padding:5px;
+border-radius: 5px;
+}
+button:hover{
+  background-color: #9CA6FF;
+  color: #2C0088;
+}
+button:disabled{
+  background-color: #C5C7D3;
+}
+app-hobbies{
+  width:100%;
+}
+
+ul{
+  display: flex;
+  list-style: none;
+  gap: 10px;
+  margin: 0;
+  padding: 5px;
+}
+li{
+  font-size: 12px;
+}

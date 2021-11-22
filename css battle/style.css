@@ -1,0 +1,29 @@
+body{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+.container{
+    height: 300px;
+    width: 400px;
+    background-color: #fff;
+}
+h1{
+    position: fixed;
+    color: #fff;
+    top:25vw
+}
+#textWidth{
+    position: fixed;
+    color: #fff;
+    top:25vw
+}
+#textHeight{
+    position: fixed;
+    color: #fff;
+    top: 45vw;
+    left: 20vw;
+}

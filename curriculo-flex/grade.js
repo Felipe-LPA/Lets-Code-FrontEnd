@@ -9,7 +9,6 @@ for (const icon of tdEl) {
     icon.appendChild(gradeIcon);
   }
   const icons = icon.querySelectorAll(".grade-icons");
-  console.log(icons);
   for (const fulfillIcon of icons) {
     if (fulfill <= 0) continue;
     fulfillIcon.className = "grade-icons-fulfill";

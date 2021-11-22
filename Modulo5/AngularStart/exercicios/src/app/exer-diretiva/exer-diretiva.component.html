@@ -1,0 +1,16 @@
+<section class='container'>
+  <form [formGroup]='father' (ngSubmit)='something()'>
+    <input placeholder='Digite seu nome' type="text" formControlName="nome">
+    <input placeholder='Digite sua cidade' type="text" formControlName="cidade">
+    <app-hobbies (showHobbiesEmitter)='showHobbies($event)' (textEmitter)='getHobbie($event)'></app-hobbies>
+    <div class="card-wrapper" >
+      <ul *ngIf="showingHobbies">
+        <li *ngFor="let hobbie of hobbies">
+          <app-hobbies-card [hobbie]='hobbie'></app-hobbies-card>
+        </li>
+      </ul>
+
+    </div>
+    <button [disabled]='father.invalid'>Entrar</button>
+  </form>
+</section>

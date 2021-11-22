@@ -1,0 +1,12 @@
+
+<div>
+  <nav>
+    <ul>
+      <li *ngFor="let page of pages let i = index">
+        <!-- <a (click)="gotoItems(page)">{{pagesViewName[i]}}</a> -->
+        <a (click)="gotoItems(page)">{{pagesObj[page]}}</a>
+      </li>
+    </ul>
+  </nav>
+</div>
+<router-outlet></router-outlet>
